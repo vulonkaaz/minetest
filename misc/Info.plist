@@ -5,15 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>luanti</string>
+	<string>minetest</string>
 	<key>CFBundleIconFile</key>
-	<string>luanti-icon.icns</string>
+	<string>minetest-icon.icns</string>
 	<key>CFBundleName</key>
-	<string>Luanti</string>
+	<string>Minetest</string>
 	<key>CFBundleDisplayName</key>
-	<string>Luanti</string>
+	<string>Minetest</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.luanti.luanti</string>
+	<string>net.minetest.minetest</string>
 	<key>NSHighResolutionCapable</key>
 	<false/>
 </dict>

@@ -219,7 +219,7 @@ if(USE_SDL2)
 	if(NOT ANDROID)
 		find_package(SDL2 REQUIRED)
 	else()
-		# provided by AndroidLibs.cmake
+		# provided by MinetestAndroidLibs.cmake
 	endif()
 	message(STATUS "Found SDL2: ${SDL2_LIBRARIES}")
 

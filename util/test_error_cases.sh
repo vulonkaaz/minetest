@@ -1,12 +1,12 @@
 #!/bin/bash
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 gameid=${gameid:-devtest}
-executable=$dir/../bin/luanti
+minetest=$dir/../bin/minetest
 testspath=$dir/../tests
 conf_server=$testspath/server.conf
 worldpath=$testspath/world
 
-[ -e "$executable" ] || { echo "executable $executable missing"; exit 1; }
+[ -e "$minetest" ] || { echo "executable $minetest missing"; exit 1; }
 
 write_config () {
 	printf '%s\n' >"$conf_server" \
@@ -31,14 +31,14 @@ ln -s "$dir/helper_mod" "$worldpath/worldmods/"
 
 args=(--server --config "$conf_server" --world "$worldpath" --gameid $gameid)
 
-# make sure we can tell apart sanitizer and luanti errors
+# make sure we can tell apart sanitizer and minetest errors
 export ASAN_OPTIONS="exitcode=42"
 export MSAN_OPTIONS="exitcode=42"
 
 # see helper_mod/init.lua for the different types
 for n in $(seq 1 4); do
 	write_config error_type=$n
-	run "$executable" "${args[@]}"
+	run "$minetest" "${args[@]}"
 	echo "---------------"
 done
 
