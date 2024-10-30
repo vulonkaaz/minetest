@@ -1,3 +1,5 @@
+-- Minetest: builtin/misc.lua
+
 local S = core.get_translator("__builtin")
 
 --

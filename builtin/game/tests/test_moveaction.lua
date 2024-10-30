@@ -35,7 +35,7 @@ end
 local log = function(...) end
 --local log = print
 
-core.register_allow_player_inventory_action(function(_, action, inv, info)
+minetest.register_allow_player_inventory_action(function(_, action, inv, info)
 	log("\tallow " .. action, info.count or info.stack:to_string())
 
 	if action == "move" then
@@ -69,7 +69,7 @@ core.register_allow_player_inventory_action(function(_, action, inv, info)
 	return -- Unlimited
 end)
 
-core.register_on_player_inventory_action(function(_, action, inv, info)
+minetest.register_on_player_inventory_action(function(_, action, inv, info)
 	log("\ton " .. action, info.count or info.stack:to_string())
 
 	if action == "take" or action == "put" then

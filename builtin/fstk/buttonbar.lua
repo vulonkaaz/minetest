@@ -1,4 +1,4 @@
---Luanti
+--Minetest
 --Copyright (C) 2014 sapier
 --Copyright (C) 2023 Gregor Parzefall
 --

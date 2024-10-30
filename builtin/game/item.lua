@@ -1,3 +1,5 @@
+-- Minetest: builtin/item.lua
+
 local builtin_shared = ...
 
 local function copy_pointed_thing(pointed_thing)

@@ -1,4 +1,4 @@
---Luanti
+--Minetest
 --Copyright (C) 2013 sapier
 --
 --This program is free software; you can redistribute it and/or modify
@@ -840,7 +840,7 @@ function pkgmgr.get_contentdb_id(content)
 		return content.author:lower() .. "/" .. content.name
 	end
 
-	-- Until version 5.8.0, Minetest Game was bundled with the engine.
+	-- Until Minetest 5.8.0, Minetest Game was bundled with Minetest.
 	-- Unfortunately, the bundled MTG was not versioned (missing "release"
 	-- field in game.conf).
 	-- Therefore, we consider any installation of MTG that is not versioned,

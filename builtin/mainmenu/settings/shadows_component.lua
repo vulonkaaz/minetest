@@ -1,4 +1,4 @@
---Luanti
+--Minetest
 --Copyright (C) 2021-2 x2048
 --Copyright (C) 2022-3 rubenwardy
 --

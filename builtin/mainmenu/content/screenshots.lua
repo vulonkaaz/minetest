@@ -1,4 +1,4 @@
---Luanti
+--Minetest
 --Copyright (C) 2023-24 rubenwardy
 --
 --This program is free software; you can redistribute it and/or modify
@@ -40,7 +40,7 @@ function get_screenshot(package, screenshot_url, level)
 		return defaulttexturedir .. "no_screenshot.png"
 	end
 
-	-- Luanti only supports png and jpg
+	-- Minetest only supports png and jpg
 	local ext = get_file_extension(screenshot_url)
 	if ext ~= "png" and ext ~= "jpg" then
 		screenshot_url = screenshot_url:sub(0, -#ext - 1) .. "png"

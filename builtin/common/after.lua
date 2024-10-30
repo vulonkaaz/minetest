@@ -155,7 +155,7 @@ end
 
 function core.after(after, func, ...)
 	assert(tonumber(after) and not core.is_nan(after) and type(func) == "function",
-		"Invalid core.after invocation")
+		"Invalid minetest.after invocation")
 
 	local new_job = {
 		mod_origin = core.get_last_run_mod(),
