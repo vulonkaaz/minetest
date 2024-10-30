@@ -88,6 +88,10 @@ DS:
 
 grorp:
   textures/base/pack/exit_btn.png
+  textures/base/pack/menu_header.png
+    using the font "undefined medium" (https://undefined-medium.com/),
+    which is licensed under the SIL Open Font License, Version 1.1
+    modified by DS
 
 License of Minetest source code
 -------------------------------
